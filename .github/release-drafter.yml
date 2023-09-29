@@ -1,5 +1,7 @@
 name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
+exclude-labels:
+  - 'skip-release-note'
 categories:
   - title: '🚀 Features'
     labels:
@@ -11,7 +13,11 @@ categories:
       - 'bugfix'
       - 'bug'
   - title: '🧰 Maintenance'
-    label: 'chore'
+    labels:
+      - 'chore'
+      - 'ci'
+      - 'dependencies'
+      - 'refactor'
   - title: '📕 Docs'
     label: 'docs'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
@@ -49,6 +55,12 @@ autolabeler:
       - '/deps:/i'
       - '/dependencies:/i'
       - '/bump:/i'
+  - label: 'skip-release-note'
+    title:
+      - '/skip:/i'
+  - label: 'ci'
+    title:
+      - '/ci:/i'
 version-resolver:
   major:
     labels:
