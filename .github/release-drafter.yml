@@ -1,5 +1,7 @@
 name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
+exclude-labels:
+  - 'skip-release-note'
 categories:
   - title: '🚀 Features'
     labels:
@@ -11,7 +13,11 @@ categories:
       - 'bugfix'
       - 'bug'
   - title: '🧰 Maintenance'
-    label: 'chore'
+    labels:
+      - 'chore'
+      - 'ci'
+      - 'dependencies'
+      - 'refactor'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 autolabeler:
@@ -47,6 +53,12 @@ autolabeler:
       - '/deps:/i'
       - '/dependencies:/i'
       - '/bump:/i'
+  - label: 'skip-release-note'
+    title:
+      - '/skip:/i'
+  - label: 'ci'
+    title:
+      - '/ci:/i'
 version-resolver:
   major:
     labels:
