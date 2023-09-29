@@ -1,0 +1,26 @@
+{
+  "name": "ci-cd-site-release-version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "dev": "npx eleventy --serve && tailwindcss -i src/assets/css/tailwind.css -o ./_site/css/style.css --watch",
+    "build": "npx eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.`com/matteo-gildone/ci-cd-site-release-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteo-gildone/ci-cd-site-release-version/issues"
+  },
+  "homepage": "https://github.com/matteo-gildone/ci-cd-site-release-version#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
