@@ -1,3 +1,3 @@
-# ci-cd-site-release-version
+# CI/CD Test project
 
-Test repo
+Test repo for ci/cd
