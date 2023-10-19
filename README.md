@@ -2,4 +2,5 @@
 
 Test repo for ci/cd
 
-This is: release/v0.0.1
+This was: release/v0.0.1
+This is: release/v0.0.2
