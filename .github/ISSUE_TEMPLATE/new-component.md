@@ -1,5 +1,5 @@
 ---
-name: Add <component name>
+name: New component
 about: Use this issue template for creating new issues from here.
 title: ''
 labels: ''
