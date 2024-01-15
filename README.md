@@ -1,5 +1,7 @@
 # CI/CD Test AMAZING project
 
+adding more info here
+
 Test repo for ci/cd
 
 - This was: release/v0.0.1
