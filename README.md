@@ -1,4 +1,4 @@
-# CI/CD Test project
+# CI/CD Test AMAZING project
 
 Test repo for ci/cd
 
